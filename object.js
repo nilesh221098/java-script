@@ -18,13 +18,34 @@ jsuser.age = 19
 
 jsuser.greeting = function()
 {
-    console.log("hello")
+    //console.log("hello")
 }
-console.log(jsuser.greeting())
+//console.log(jsuser.greeting())
 
 jsuser.greeting2 = function()
 {
     console.log(`hello user, ${this.name}`);
 }
-console.log(jsuser.greeting2())
+//console.log(jsuser.greeting2())
 
+//singleton
+
+const user = new Object()
+
+userid = 12
+user.name = "mark"
+
+userloggedin =  false
+
+const ruser = {
+    email: "abc@d.com",
+    fullname:{
+        userfullname: {
+        fname:"ab",
+        lname:"cd"
+    }
+}
+}
+//console.log(user)
+console.log(ruser.fullname.userfullname.fname)
+console.log(ruser.email)
