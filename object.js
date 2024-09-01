@@ -30,12 +30,15 @@ jsuser.greeting2 = function()
 
 //singleton
 
-const user = new Object()
+//const user = new Object()
 
-userid = 12
-user.name = "mark"
+const tuser = {}
+tuser.id = "12as"
+tuser.name = "mark"
+tuser.isloggedin =  false
 
-userloggedin =  false
+
+//
 
 const ruser = {
     email: "abc@d.com",
@@ -47,5 +50,66 @@ const ruser = {
 }
 }
 //console.log(user)
-console.log(ruser.fullname.userfullname.fname)
-console.log(ruser.email)
+//console.log(ruser.fullname.userfullname.fname)
+//console.log(ruser.email)
+const obj1  = {
+    1: "a",
+    2: "b"
+}
+const obj2 = {
+    3: "a",
+    4: "b"
+}
+const obj4 = {
+    5: "a",
+    6: "b"
+}
+//const obj3 = Object.assign({}, obj1, obj2, obj4)
+const obj3 = {...obj1,...obj2}
+//console.log(obj3)
+
+const users  = [
+    {
+    id:"3",
+    name:"cd"
+    },
+    {
+        fname:"ab",
+        lname:"cd"
+        }
+    ]
+
+    //(users[0].id)
+    //console.log(tuser)
+    //console.log(Object.keys(tuser))
+    //console.log(Object.values(tuser))
+    //console.log(Object.entries(tuser))
+    //console.log(tuser.hasOwnProperty('isloggedin'))
+
+    //object destructure -------
+    const course = {
+        cname:"hindi",
+        price:"999",
+        cins:"nilesh"
+    }
+    const {cins} = course
+    //const {cins : ins} = course
+    //console.log(cins)
+    //console.log(ins)
+
+    ///api onject format
+   // {
+       // "name::"nilesh",
+       // "cname":"js";
+       // "price":"free"
+   // }
+
+   // api array format
+   //{
+   // {}
+   // {}
+
+   //}
+
+
+
