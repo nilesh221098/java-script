@@ -69,8 +69,12 @@ const addtwo = (num1, num2) =>  ({username: "nilesh"})
 
 ( (name) => {
     //with parametr IIFE
-     console.log(`DB connected 2 ${name}`)
+     //console.log(`DB connected 2 ${name}`)
          })('nilesh')
+
+
+
+
 
 
 
