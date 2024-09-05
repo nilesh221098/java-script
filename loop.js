@@ -56,7 +56,7 @@ for (const key in pro) {
 }
 
 //for each loop
-const cd = ["js", "py","java"]
+//const cd = ["js", "py","java"]
 //cd.forEach(function (item) {
  //   console.log(item)
 //});
@@ -74,23 +74,81 @@ const cd = ["js", "py","java"]
 //    console.log(item,index,arr)
 //})
 
-const mycd = [
+//const mycd = [
+//    {
+//        lname:"js",
+//        lfile:"jsf",
+//    },
+ //   {
+ //       lname:"java",
+//        lfile:"jsf",
+//    },
+//    {
+  //      lname:"py",
+//        lfile:"pyf",
+//    }
+//]
+//mycd.forEach((item)=>{
+ //   console.log(item.lname)
+//})
+
+//const cd = ["ja", "ruby", "java"]
+//const values = cd.forEach((item) => {
+    //console.log(item)
+  //  return item
+//})
+//console.log(values)
+
+//const mynum = [1,2,3,4,5,6,7,8,9]
+//const newnum = mynum.filter((num)=> num > 4
+//)
+//const newnum = mynum.filter((num)=>{
+//    return num > 4
+//})
+//console.log(newnum)
+
+//const newnum =[]
+//mynum.forEach((num) => {
+//if (num > 4){
+//    newnum.push(num)
+//}
+//})
+//console.log(newnum)
+
+//const mynum = [1,2,3,4,5,6,7,8,9]
+//const newnum = mynum.map( (num) => num + 10)
+//console.log(newnum)
+
+//const newnum = mynum.map((num)=> num*10)
+//.map((num)=>num+1 )
+//.filter((num)=>num>=40 )
+//console.log(newnum)
+
+
+const mynum = [1,2,3]
+
+//const mytotal = mynum.reduce(function(acc,curval){
+//    console.log(`acc:${acc} and curval: ${curval}`)
+//    return acc + curval 
+//},0)
+//console.log(mytotal)
+
+//const mytotal = mynum.reduce((acc,curval)=> acc+curval,0)
+   //console.log(mytotal)
+    
+const scart = [
     {
-        lname:"js",
-        lfile:"jsf",
+        itemmname:"js",
+        price:"4999"
     },
     {
-        lname:"java",
-        lfile:"jsf",
+        itemmname:"py",
+        price:"6999"
     },
     {
-        lname:"py",
-        lfile:"pyf",
+        itemmname:"java",
+        price:"3999"
     }
 ]
-mycd.forEach((item)=>{
-    console.log(item.lname)
-})
-
-
-
+const fprice = scart.reduce((acc, item)=> acc + item.price, 0)
+console.log(fprice)
