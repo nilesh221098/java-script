@@ -150,5 +150,5 @@ const scart = [
         price:"3999"
     }
 ]
-const fprice = scart.reduce((acc, item)=> acc + item.price, 0)
+const fprice = scart.reduce((acc, item) => acc + item.price, 0)
 console.log(fprice)
