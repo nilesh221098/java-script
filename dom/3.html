@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next lession</title>
+</head>
+<body style="background-color: black;color: beige;">
+    
+        <ul class="lang">
+        <li> html</li>
+        </ul>
+</body>
+<script>
+function addlang(langname){
+   const li = document.createElement('li');
+   li.innerHTML = `${langname}`
+   document.querySelector('.lang').
+   appendChild(li)
+}
+addlang ("python")
+addlang ("java")
+
+
+function addopt (langname) {
+  const li = document.createElement('li')
+  li.appendChild(document.createTextNode(langname))
+  document.querySelector('.lang').appendChild(li)
+}
+addopt('go')
+addopt('ruby')
+//edit
+
+const seclang = document.querySelector("li:nth-child(2)")
+//seclang.innerHTML= "mojo"
+const newli = document.createElement('li')
+newli.textContent = "mojo 1"
+seclang.replaceWith(newli)
+
+//edit
+const flang = document.querySelector("li:first-child")
+flang.outerHTML = '<li>type</li>'
+
+//remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+    </script>
+</html>
