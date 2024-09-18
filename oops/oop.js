@@ -1,7 +1,7 @@
 const user = {
     username:"hitesh",
     logincount:8,
-    signedin:true
+    signedin:true,
 
     getUser: function(){
         console.log("got user details");
